@@ -19,7 +19,8 @@ int main(){
     string name;
     double balance=345654;
     string operation="Withdraw Money";
-    string operation1="Deposit Funds";
+    string operation1="Deposit Funds"; 
+    string word;
 
     cout<<"enter the user name : ";
     cin>>name;
@@ -32,7 +33,7 @@ int main(){
     }
 
     cout<<" What do you want ( Withdraw Money -- Deposit Funds ) : "<<endl;
-    cin>>operation;
+    cin>>string;
 
     if(operation =="Withdraw Money"){
 
