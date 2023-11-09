@@ -40,7 +40,7 @@ int main(){
         cin>>operation;
     }
 
-    else if(operation=="Deposit Funds"){
+    else if(operation1=="Deposit Funds"){
 
          cout<<" Enter the amount of money that you want to deposit "<<endl;
          cin>>operation1;
