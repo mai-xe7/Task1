@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <sstream>
+#include <algorithm>
+
+using namespace std;
+
+
+int main(){
+
+
+    ///Question 9
+
+    cout<<"               ATM Simulation   " <<endl;
+    cout<<"-------------------------------------------------"<<endl;
+
+    long int pass;
+    string name;
+    double balance=345654;
+    string operation="Withdraw Money";
+    string operation1="Deposit Funds";
+
+    cout<<"enter the user name : ";
+    cin>>name;
+    cout<<"enter the password : ";
+    cin>>pass;
+
+    if((pass==123456) && (name=="mai mahmoud")) {
+
+       cout<<"YOUR BALANCE IS "<<balance<<endl;
+    }
+
+    cout<<" What do you want ( Withdraw Money -- Deposit Funds ) : "<<endl;
+    cin>>operation;
+
+    if(operation =="Withdraw Money"){
+
+        cout<<" Enter the amount of money that you want to withdraw "<<endl;
+        cin>>operation;
+    }
+
+    else if(operation=="Deposit Funds"){
+
+         cout<<" Enter the amount of money that you want to deposit "<<endl;
+         cin>>operation1;
+    }
+
+return 0;
+}

@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+int main(){
+
+ ///Question 2
+
+     int x,j;
+    cout<<"please enter a number"<<endl;
+    cin>>x;
+    for(int i=2;i<x;i++){
+        if(x%i==0){
+           j=1;
+        }
+    }
+
+    if(j==1){
+        cout<<x<<" is not a primary number"<<endl;
+    }
+    else
+        cout<<x<<" is  a primary number"<<endl;
+
+   }

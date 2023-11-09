@@ -1,0 +1,53 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <sstream>
+#include <algorithm>
+
+using namespace std;
+
+void max_number(int arr[],int sizze){
+
+    int maxx=0;
+    for(int i=0;i<sizze;i++){
+        if(maxx<arr[i]){
+            maxx=arr[i];
+        }
+    }
+    cout<<"the largest number is "<<maxx<<endl;
+}
+
+
+
+void min_number(int arr[],int sizze){
+
+
+    int d=arr[1];
+    for(int i=0;i<sizze;i++){
+            if(d>arr[i]){
+                d=arr[i];
+            }
+    }
+    cout<<"the smallest number is "<<d<<endl;
+
+}
+
+
+
+
+int main()
+
+
+{
+
+ ///Question 6
+
+   int c[]={6,87,45,78,23,55,78};
+   int sizze=sizeof(c)/sizeof(c[0]);
+
+    max_number( c, sizze);
+    min_number(c,sizze);
+    cout<<endl;
+
+return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+void fact(int x){
+
+     int factorial =1;
+     cout<<" Enter a number to get the factorial of it: "<<endl;
+     cin>>x;
+     for(int i=1;i<=x;i++){
+
+        factorial=factorial*i;
+     }
+     cout<<" The Factorial of "<<x<<" is "<<factorial<<endl;
+
+}
+
