@@ -1,0 +1,17 @@
+you should have an account
+
+know how to make repositories
+
+use command line to help you in working with git_hub web
+
+You should know some basic commands in git_hub like:
+
+1-commit : to make checkpoint to your code in local repo
+
+2-clone : copy Repo from local or remote
+
+3-push : upload local changes to remote
+
+4-pull : you pull changes from remote Repo to your local 
+
+5- git config --global--edit : to go into the editor
