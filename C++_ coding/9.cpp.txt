@@ -11,41 +11,48 @@ int main(){
 
 
     ///Question 9
-
-    cout<<"               ATM Simulation   " <<endl;
-    cout<<"-------------------------------------------------"<<endl;
+cout << "               ATM Simulation   " << endl;
+    cout << "-------------------------------------------------" << endl;
 
     long int pass;
     string name;
-    double balance=345654;
-    string operation="Withdraw Money";
-    string operation1="Deposit Funds"; 
+    double balance = 345654;
+    string operation = "Withdraw Money";
+    string operation1 = "Deposit Funds";
     string word;
-    int operationn;
+    double amount;
 
-    cout<<"enter the user name : ";
-    cin>>name;
-    cout<<"enter the password : ";
-    cin>>pass;
+    cout << "Enter the user name: ";
+    cin >> name;
+    cout << "Enter the password: ";
+    cin >> pass;
 
-    if((pass==123456) && (name=="mai mahmoud")) {
-
-       cout<<"YOUR BALANCE IS "<<balance<<endl;
+    if ((pass == 123456) && (name == "mai")) {
+        cout << "YOUR BALANCE IS " << balance << endl;
+    } else {
+        cout << "Invalid username or password. Exiting..." << endl;
+        return 0;
     }
 
-    cout<<" What do you want ( Withdraw Money -- Deposit Funds ) : "<<endl;
-    cin>>word;
+    cout << "What do you want? (Withdraw Money / Deposit Funds): ";
+    cin >> word;
 
-    if(word==operation){
-
-        cout<<" Enter the amount of money that you want to withdraw "<<endl;
-        cin>>operationn;
-    }
-
-    else if(word==operation1){
-
-         cout<<" Enter the amount of money that you want to deposit "<<endl;
-         cin>>operationn;
+    if (word==operation) {
+        cout << "Enter the amount of money that you want to withdraw: ";
+        cin >> amount;
+        if (amount > balance) {
+            cout<<"Insufficient balance. Withdrawal failed." <<endl;
+        } else {
+            balance -= amount;
+            cout << "Withdrawal successful. Updated balance: " << balance << endl;
+        }
+    } else if (word==operation1) {
+        cout<<"Enter the amount of money that you want to deposit: ";
+        cin>>amount;
+        balance += amount;
+        cout<<"Deposit successful. Updated balance: "<<balance<<endl;
+    } else {
+        cout<<"Invalid operation. Exiting..."<<endl;
     }
 
 return 0;
