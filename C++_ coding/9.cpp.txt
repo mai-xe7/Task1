@@ -11,7 +11,7 @@ int main(){
 
 
     ///Question 9
-cout << "               ATM Simulation   " << endl;
+cout << "              ATM Simulation   " << endl;
     cout << "-------------------------------------------------" << endl;
 
     long int pass;
