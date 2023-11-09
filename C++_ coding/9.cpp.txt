@@ -21,6 +21,7 @@ int main(){
     string operation="Withdraw Money";
     string operation1="Deposit Funds"; 
     string word;
+    int operationn;
 
     cout<<"enter the user name : ";
     cin>>name;
@@ -33,18 +34,18 @@ int main(){
     }
 
     cout<<" What do you want ( Withdraw Money -- Deposit Funds ) : "<<endl;
-    cin>>string;
+    cin>>word;
 
-    if(operation =="Withdraw Money"){
+    if(word==operation){
 
         cout<<" Enter the amount of money that you want to withdraw "<<endl;
-        cin>>operation;
+        cin>>operationn;
     }
 
-    else if(operation1=="Deposit Funds"){
+    else if(word==operation1){
 
          cout<<" Enter the amount of money that you want to deposit "<<endl;
-         cin>>operation1;
+         cin>>operationn;
     }
 
 return 0;
